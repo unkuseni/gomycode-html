@@ -32,3 +32,14 @@ Use of HTML Forms and a footer
 Use of comments during the code
 
 Use of pictures / colors ( creativity)
+
+
+### Plan for the project
+
+-  Header Section and Logo
+- Hero and Socials Links
+- About Section
+- Work Section
+- Resume Section
+- Contact Section
+- Footer

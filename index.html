@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <!-- This is the header section of my code 
   It shows my page title and  imports my stylesheet and javascript -->
   <title>unkuseni's Portfolio</title>
-  <script type="module" src="index.js"></script>
+
 </head>
 
 <body>
@@ -16,22 +17,60 @@
   <header class="nav-section">
     <h2><a href="#">unkuseni</a></h2>
     <nav class="navbar">
-      <button class="mobile-nav-btn"><img src="images/menu.png" alt="harmburger menu"></button>
-      <ul class="nav-list">
-        <li class="nav-item4"><button>close button</button></li>
-        <li class="nav-item2"><a href="#">About</a></li>
-        <li class="nav-item3"><a href="#">About</a></li>
-        <li class="nav-item1"><a href="#">About</a></li>
+      <button id="menu-btn" class="btn"><img src="images/menu.png" alt="menu-btn"></button>
+
+      <ul id="nav-list">
+        <li class="nav-item"><a class="navlink" href="#main">Home</a></li>
+        <li class="nav-item"><a class="navlink" href="#">About</a></li>
+        <li class="nav-item"><a class="navlink" href="#">Work</a></li>
+        <li class="nav-item"><a class="navlink" href="#">Resume</a></li>
+        <li class="nav-item"><a class="navlink" href="#">Contact</a></li>
+        <li class="nav-item-button"><button id="close-btn" class="btn"><img src="images/close.png"
+              alt="close-btn"></button></li>
       </ul>
+
     </nav>
   </header>
-  <main>
-    <header class="hero-section">
-      <h2>Hi, I'm unkuseni</h2>
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, hic.</h2>
-    </header>
+  <main id="main">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio molestiae natus, sint adipisci necessitatibus
+    vel! Debitis eius optio esse. Tempore eveniet voluptates in harum, esse ducimus accusantium quos rerum. Cum vitae,
+    dignissimos inventore reiciendis praesentium, distinctio ab eos quod rem tempore quia laborum neque aliquid quisquam
+    sed! Recusandae explicabo ut fugiat culpa provident placeat ad officiis voluptatum maiores est non, sed error magni
+    alias dicta, reiciendis suscipit ducimus debitis quo quis natus, perferendis nobis? Sed ducimus optio nam hic.
+    Architecto ipsa facere culpa maiores. Laudantium at veniam molestiae dicta nesciunt eius corrupti. Soluta explicabo
+    ex itaque cumque fugiat consectetur praesentium perferendis error quis officiis, ipsum beatae ab aspernatur, ipsam
+    modi tempore sit sap
   </main>
+  <footer id="contact-section">
 
+    <div id="contact">
+    <form id="contact-form" action="">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <label for="github">Github Username:</label>
+      <input type="text" id="github" name="github" required><br>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br>
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address" cols="30" rows="5" required></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+      <ul class="social">
+        <li class="socials"><a href="http://github.com/unkuseni"><i class="fa-brands fa-github"></i></a></li>
+        <li class="socials"><a href="http://twitter.com/unkuseni"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li class="socials"><a href="http://wa.link/9gj3em">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a></li>
+        <li class="socials"><a href="http://instagram.com/unkuseni"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+      <p class="copy">&copy; Copyright 2024 unkuseni. All Rights Reserved</p>
+
+    </div>
+  </footer>
+  <script type="module" src="index.js"></script>
+  <script src="https://kit.fontawesome.com/3324c8ff59.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

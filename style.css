@@ -31,13 +31,17 @@ body {
   top: 0;
   padding: 1em;
   background-color: var(--green);
+  z-index: 100;
+}
+
+.nav-section h2 a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #nav-list {
   display: none;
   list-style: none;
-
-
 
 }
 
@@ -60,17 +64,78 @@ body {
   font-size: 2em;
 }
 
+#nav-list li {
+  margin: 5px;
 
+}
 
-
+#nav-list li:hover  {
+  padding: 2vw;
+  background-color: var(--red);
+  border-radius: 25px;
+  font-weight: 900;
+}
 
 .btn {
   border: none;
   background-color: transparent;
 }
 
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  background-color: #fff;
+  background-image: url(images/hero-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  
+}
+
+.hero-txt {
+font-size: 2rem;
+margin: 5vh 3vw;
+}
+
+.name {
+  color: var(--red);
+}
+
+.abt-header {
+  margin-top: 2vh;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: var(--red);
+}
+
+.abt-article {
+  margin: 2vh 5vw;
+  text-align: center;
+
+}
+
+#skills-section {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.skill-item {
+  padding: 1vw;
+  font-size: 2em;
+}
+
+
 footer {
-  padding: 2vh 2vw;
+  padding: 2vh;
 }
 
 #contact {
@@ -83,12 +148,50 @@ footer {
   justify-content: end;
 }
 
-.copy {
+form {
+  padding: 2vh 1vw;
+  margin-bottom: 2vh;
+}
 
+.copy{
   align-self: center;
-  font-size: 1.5em;
+  font-size: 1em;
   padding-bottom: 1vh;
 
+}
+label {
+  display: block;
+  font-size: 1.5em;
+}
+
+input {
+  margin:0.5vh 0;
+  background: none;
+  border:  1px var(--white) solid;
+  border-radius: 1vw;
+  margin-left: 10px;
+  color: var(--red);
+  font-weight: bold;
+}
+
+input:hover  {
+  border-color: var(--red);
+}
+
+textarea {
+  background-color: inherit;
+  border: 1px var(--white) solid;
+  border-radius: 1vw;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1.5em;
+  padding: 1vw;
+  border-radius: 1vw;
+  border: none;
 }
 
 .social {
@@ -131,5 +234,9 @@ a:visited {
 
   .nav-item-button {
     display: none;
+  }
+
+  #hero-section {
+    flex-direction: row;
   }
 }
